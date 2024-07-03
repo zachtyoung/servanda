@@ -1,6 +1,7 @@
+import React from "react";
+import { Helmet } from "react-helmet";
 import logo from "../src/assets/site-images/Print_Transparent.svg";
 import socialLogo from "../src/assets/site-images/FullLogo.png";
-import { Helmet } from "react-helmet";
 import "./App.css";
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <meta name="twitter:image" content={socialLogo} />
         <meta name="twitter:url" content="https://www.servandaadvisors.com" />
       </Helmet>
-      <img src={logo} />
+      <img src={logo} alt="Servanda Advisors Logo" />
       <div className="cta">Coming Soon</div>
     </div>
   );

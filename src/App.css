@@ -1,17 +1,5 @@
 
 
-.cta{
-position: absolute;
-bottom: 20vh;
-color: rgba(255, 255, 255, 0.624);
-border: 2px solid rgba(255, 255, 255, 0.624);
-border-radius: 2rem;
-padding: .5rem 1rem;
-text-transform: uppercase;
-font-weight: 500;
-}
-
-
 html, body {
   margin: 0;
   padding: 0;
@@ -23,13 +11,80 @@ html, body {
 .App {
   position: relative;
   text-align: center;
-  background-color: rgb(50,60,55);
+  background-color: rgb(50, 60, 55);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+img {
+  max-width: 80%;
+}
+
+.cta {
+  color: rgba(255, 255, 255, 0.624);
+  border: 2px solid rgba(255, 255, 255, 0.624);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: absolute;
+  bottom: 10vh;
+}
+
+
+/* Media Queries for Responsive Design */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .App {
+
+  }
+
+  img {
+      max-width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+  .App {
+  
+  }
+
+  img {
+      max-width: 90%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+  .App {
+
+  }
+
+  img {
+      max-width: 80%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .App {
+    
+  }
+
+  img {
+      max-width: 70%;
+  }
 }
