@@ -1,10 +1,11 @@
-import logo from "./logo.svg";
+import logo from "../src/assets/site-images/Print_Transparent.svg";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Servanda Advisors</h1>
+      <img src={logo} />
+      <div className="cta">Coming Soon</div>
     </div>
   );
 }
